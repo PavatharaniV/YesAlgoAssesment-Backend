@@ -20,4 +20,8 @@ app.use('/api/posts', postRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/connections', connectionRoutes);
 
+app.get('/', (req, res) => {
+  res.send('Hello from the root route!');
+});
+
 app.listen(3000, () => console.log('Server running on port 3000'));
