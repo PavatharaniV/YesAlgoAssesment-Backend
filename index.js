@@ -24,4 +24,6 @@ app.get('/', (req, res) => {
   res.send('Hello from the root route!');
 });
 
+console.log(process.env.MONGODB_URI);
+
 app.listen(3000, () => console.log('Server running on port 3000'));
